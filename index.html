@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechOrg - Innovation & Excellence</title>
+    <meta
+      name="description"
+      content="TechOrg - Leading technology solutions and innovation. Explore our team, projects, and latest insights."
+    />
+    <meta
+      name="keywords"
+      content="technology, innovation, web development, AI, blockchain, cybersecurity"
+    />
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      as="style"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>"
+    />
+  </head>
+  <body>
+    <!-- Loading screen -->
+    <div id="loading-screen" class="loading-screen">
+      <div class="loader">
+        <div class="loader-inner"></div>
+      </div>
+    </div>
+
+    <!-- Particles background -->
+    <div class="particles" id="particles" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <header>
+      <nav class="container">
+        <div class="logo">
+          <span class="logo-icon"></span>
+          HoneyMinibee
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#people">People</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul class="mobile-nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#people">People</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="line">Innovation</span>
+          <span class="line">Meets</span>
+          <span class="line">Excellence</span>
+        </h1>
+        <p class="hero-subtitle">
+          A silly place for silly people with silly projects
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="cta-button primary">Explore Our Work</a>
+          <a href="#contact" class="cta-button secondary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="floating-elements">
+          <div class="floating-element" data-speed="0.5">🚀</div>
+          <div class="floating-element" data-speed="0.8">💡</div>
+          <div class="floating-element" data-speed="0.3">⚡</div>
+          <div class="floating-element" data-speed="0.6">🔮</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- People Section -->
+    <section id="people" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title fade-in">Our Team</h2>
+          <p class="section-subtitle fade-in">
+            Meet the brilliant minds driving innovation
+          </p>
+        </div>
+        <div class="people-grid">
+          <div class="person-card fade-in" data-delay="0.1">
+            <div class="person-avatar">
+              <img
+                src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%2300ffff'/><text x='50' y='60' text-anchor='middle' font-size='24' fill='%23000'>S</text></svg>"
+                alt="Alex Smith"
+                loading="lazy"
+              />
+            </div>
+            <div class="person-info">
+              <h3 class="person-name">Srinivas P</h3>
+              <p class="person-role">CEO & Founder</p>
+              <p class="person-bio">Started this site.</p>
+              <div class="person-social">
+                <a href="#" aria-label="LinkedIn profile">💼</a>
+                <a href="#" aria-label="Twitter profile">🐦</a>
+                <a href="#" aria-label="GitHub profile">💻</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="person-card fade-in" data-delay="0.2">
+            <div class="person-avatar">
+              <img
+                src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23ff00ff'/><text x='50' y='60' text-anchor='middle' font-size='24' fill='%23000'>P</text></svg>"
+                alt="Maria Johnson"
+                loading="lazy"
+              />
+            </div>
+            <div class="person-info">
+              <h3 class="person-name">Praveen</h3>
+              <p class="person-role">CTO</p>
+              <p class="person-bio">Full-stack guy.</p>
+              <div class="person-social">
+                <a href="#" aria-label="LinkedIn profile">💼</a>
+                <a href="#" aria-label="Twitter profile">🐦</a>
+                <a href="#" aria-label="GitHub profile">💻</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="person-card fade-in" data-delay="0.3">
+            <div class="person-avatar">
+              <img
+                src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23ffff00'/><text x='50' y='60' text-anchor='middle' font-size='24' fill='%23000'>P</text></svg>"
+                alt="David Lee"
+                loading="lazy"
+              />
+            </div>
+            <div class="person-info">
+              <h3 class="person-name">Pranav</h3>
+              <p class="person-role">CTO</p>
+              <p class="person-bio">Bitch</p>
+              <div class="person-social">
+                <a href="#" aria-label="LinkedIn profile">💼</a>
+                <a href="#" aria-label="Twitter profile">🐦</a>
+                <a href="#" aria-label="GitHub profile">💻</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="person-card fade-in" data-delay="0.4">
+            <div class="person-avatar">
+              <img
+                src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%2300ff88'/><text x='50' y='60' text-anchor='middle' font-size='24' fill='%23000'>SC</text></svg>"
+                alt="Sarah Chen"
+                loading="lazy"
+              />
+            </div>
+            <div class="person-info">
+              <h3 class="person-name">Sarah Chen</h3>
+              <p class="person-role">Data Scientist</p>
+              <p class="person-bio">
+                Machine learning expert focused on predictive analytics and
+                business intelligence solutions.
+              </p>
+              <div class="person-social">
+                <a href="#" aria-label="LinkedIn profile">💼</a>
+                <a href="#" aria-label="Twitter profile">🐦</a>
+                <a href="#" aria-label="GitHub profile">💻</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title fade-in">Featured Projects</h2>
+          <p class="section-subtitle fade-in">
+            Transforming ideas into reality
+          </p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card fade-in" data-delay="0.1">
+            <div class="project-image">
+              <div class="project-icon">🤖</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">IEEE paper</h3>
+              <p class="project-description">
+                IEEE paper by srinivas and praveen
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">AWS</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">View Project →</a>
+                <a href="#" class="project-link secondary">Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card fade-in" data-delay="0.2">
+            <div class="project-image">
+              <div class="project-icon">🔗</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Blockchain Supply Chain</h3>
+              <p class="project-description">
+                Transparent supply chain management system using blockchain
+                technology to ensure product authenticity and traceability.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Solidity</span>
+                <span class="tech-tag">Ethereum</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Vue.js</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">View Project →</a>
+                <a href="#" class="project-link secondary">Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card fade-in" data-delay="0.3">
+            <div class="project-image">
+              <div class="project-icon">🏙️</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">IoT Smart City Dashboard</h3>
+              <p class="project-description">
+                Real-time monitoring and control system for smart city
+                infrastructure with predictive maintenance capabilities.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">IoT</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">D3.js</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">View Project →</a>
+                <a href="#" class="project-link secondary">Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card fade-in" data-delay="0.4">
+            <div class="project-image">
+              <div class="project-icon">🛡️</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Cybersecurity Framework</h3>
+              <p class="project-description">
+                Enterprise-grade security solution with AI-driven threat
+                detection and automated response systems.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Go</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Kubernetes</span>
+                <span class="tech-tag">ELK Stack</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">View Project →</a>
+                <a href="#" class="project-link secondary">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title fade-in">Latest Insights</h2>
+          <p class="section-subtitle fade-in">
+            Stay updated with our latest thoughts and discoveries
+          </p>
+        </div>
+        <div class="blog-grid">
+          <div class="blog-card fade-in" data-delay="0.1">
+            <div class="blog-image">
+              <div class="blog-category">AI & ML</div>
+            </div>
+            <div class="blog-content">
+              <p class="blog-date">July 15, 2025</p>
+              <h3 class="blog-title">
+                The Future of AI in Enterprise Solutions
+              </h3>
+              <p class="blog-excerpt">
+                Exploring how artificial intelligence is transforming business
+                operations and creating new opportunities for growth and
+                innovation...
+              </p>
+              <div class="blog-meta">
+                <span class="blog-author">By Alex Smith</span>
+                <span class="blog-read-time">5 min read</span>
+              </div>
+              <a href="#" class="blog-link">Read More →</a>
+            </div>
+          </div>
+
+          <div class="blog-card fade-in" data-delay="0.2">
+            <div class="blog-image">
+              <div class="blog-category">Architecture</div>
+            </div>
+            <div class="blog-content">
+              <p class="blog-date">July 10, 2025</p>
+              <h3 class="blog-title">
+                Building Scalable Microservices Architecture
+              </h3>
+              <p class="blog-excerpt">
+                Best practices for designing and implementing microservices that
+                can handle enterprise-level traffic and complexity...
+              </p>
+              <div class="blog-meta">
+                <span class="blog-author">By Maria Johnson</span>
+                <span class="blog-read-time">8 min read</span>
+              </div>
+              <a href="#" class="blog-link">Read More →</a>
+            </div>
+          </div>
+
+          <div class="blog-card fade-in" data-delay="0.3">
+            <div class="blog-image">
+              <div class="blog-category">Security</div>
+            </div>
+            <div class="blog-content">
+              <p class="blog-date">July 5, 2025</p>
+              <h3 class="blog-title">
+                Cybersecurity in the Age of Remote Work
+              </h3>
+              <p class="blog-excerpt">
+                Essential security measures and strategies for protecting
+                digital assets in a distributed work environment...
+              </p>
+              <div class="blog-meta">
+                <span class="blog-author">By David Lee</span>
+                <span class="blog-read-time">6 min read</span>
+              </div>
+              <a href="#" class="blog-link">Read More →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <span class="logo-icon">⚡</span>
+              TechOrg
+            </div>
+            <p>
+              Pushing the boundaries of technology with cutting-edge solutions
+              and innovative thinking.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="LinkedIn">💼</a>
+              <a href="#" aria-label="Twitter">🐦</a>
+              <a href="#" aria-label="GitHub">💻</a>
+              <a href="#" aria-label="YouTube">📺</a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Mobile Apps</a></li>
+              <li><a href="#">AI Solutions</a></li>
+              <li><a href="#">Cloud Computing</a></li>
+              <li><a href="#">Consulting</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contact Info</h3>
+            <div class="contact-info">
+              <p>📧 info@techorg.com</p>
+              <p>📞 +1 (555) 123-4567</p>
+              <p>📍 123 Tech Street<br />Silicon Valley, CA 94000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 TechOrg. All rights reserved.</p>
+          <p>Made with ❤️ for innovation</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+      ↑
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
